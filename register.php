@@ -54,7 +54,7 @@ if(isset($_POST['submit']))
 	{	
 		$verify = false;
 		$query ="INSERT INTO regestration(firstname, lastname, user_password, user_email, user_role, Admin_Status)";
-		$query .="VALUES('$firstname','$lastname','$password','$email','$user_role', 'Disapproved')";
+		$query .="VALUES('$firstname','$lastname','$password','$email','$user_role', 'Approved')";
 		
 		$result_query = mysqli_query($connection,$query);
 		
